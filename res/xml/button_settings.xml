@@ -16,7 +16,6 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
-        android:key="button_settings"
         android:title="@string/button_pref_title">
 
     <SwitchPreference

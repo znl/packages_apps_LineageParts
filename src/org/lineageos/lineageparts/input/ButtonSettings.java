@@ -216,12 +216,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // and don't even try unless the existing keys can be disabled
         boolean needsNavigationBar = false;
         if (hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
-            try {
-                IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-                needsNavigationBar = wm.needsNavigationBar();
-            } catch (RemoteException e) {
-            }
-
             if (needsNavigationBar) {
                 prefScreen.removePreference(mDisableNavigationKeys);
             } else {

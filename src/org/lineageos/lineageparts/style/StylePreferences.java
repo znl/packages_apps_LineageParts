@@ -35,6 +35,8 @@ import android.support.v7.graphics.Palette;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
+import android.content.Intent;
+import android.os.Handler;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -49,6 +51,8 @@ import org.lineageos.lineageparts.style.util.UIUtils;
 import java.util.List;
 
 import lineageos.providers.LineageSettings;
+
+import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 public class StylePreferences extends SettingsPreferenceFragment {
     private static final String TAG = "StylePreferences";
@@ -193,9 +197,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private void applyStyle(Style style) {
         int value = style.isLight() ? INDEX_LIGHT : INDEX_DARK;
-        LineageSettings.System.putInt(getContext().getContentResolver(),
-            LineageSettings.System.BERRY_GLOBAL_STYLE, value);
-
         onStyleChange(mStylePref, value);
         onAccentSelected(style.getAccent());
     }
@@ -222,11 +223,42 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
+        int oldValue = LineageSettings.System.getInt(getContext().getContentResolver(),
+                LineageSettings.System.BERRY_GLOBAL_STYLE, INDEX_WALLPAPER);
+
+        if (oldValue != value){
+            try {
+                reload();
+            }catch (Exception ignored){
+            }
+        }
+
         LineageSettings.System.putInt(getContext().getContentResolver(),
                 LineageSettings.System.BERRY_GLOBAL_STYLE, value);
 
         setStyleIcon(value);
         return true;
+    }
+
+    private void reload(){
+        Intent intent2 = new Intent(Intent.ACTION_MAIN);
+        intent2.addCategory(Intent.CATEGORY_HOME);
+        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getContext().startActivity(intent2);
+        Toast.makeText(getContext(), R.string.applying_theme_toast, Toast.LENGTH_SHORT).show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+              @Override
+              public void run() {
+                  Intent intent = new Intent(Intent.ACTION_MAIN);
+                  intent.setClassName("org.lineageos.lineageparts",
+                        "org.lineageos.lineageparts.style.StylePreferences");
+                  intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                  intent.putExtra(SettingsDrawerActivity.EXTRA_SHOW_MENU, true);
+                  getContext().startActivity(intent);
+                  Toast.makeText(getContext(), R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
+              }
+        }, 2000);
     }
 
     private void setStyleIcon(int value) {

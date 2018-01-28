@@ -25,8 +25,6 @@
     <color name="fab_ripple">#1fffffff</color><!-- 12% white -->
     <color name="fab_shape">@*android:color/accent_material_light</color>
 
-    <!-- Contributors -->
-    <color name="contributors_cloud_fg_color">@*android:color/accent_material_light</color>
     <color name="contributors_cloud_selected_color">#ff5252</color>
 
     <color name="weather_settings_icon_tint">@*android:color/accent_material_light</color>

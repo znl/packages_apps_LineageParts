@@ -15,21 +15,21 @@
 	limitations under the License.
 -->
 <resources>
-    <color name="theme_accent">#ff009688</color>
-    <color name="navbar_edit_icon_color">#607d8b</color>
+    <color name="theme_accent">@*android:color/accent_material_light</color>
+    <color name="navbar_edit_icon_color">@*android:color/accent_material_light</color>
     <color name="divider">#ffe0e0e0</color>
     <color name="setup_wizard_wifi_color_dark">#89ffffff</color>
 
-    <color name="divider_color">#20ffffff</color>
+    <color name="divider_color">#ffe0e0e0</color>
 
     <color name="fab_ripple">#1fffffff</color><!-- 12% white -->
-    <color name="fab_shape">?android:attr/colorAccent</color>
+    <color name="fab_shape">@*android:color/accent_material_light</color>
 
     <!-- Contributors -->
-    <color name="contributors_cloud_fg_color">@color/theme_accent</color>
+    <color name="contributors_cloud_fg_color">@*android:color/accent_material_light</color>
     <color name="contributors_cloud_selected_color">#ff5252</color>
 
-    <color name="weather_settings_icon_tint">#B4B9BA</color>
+    <color name="weather_settings_icon_tint">@*android:color/accent_material_light</color>
 
     <color name="perf_hot">#ffd10015</color>
     <color name="perf_cold">#ff005994</color>

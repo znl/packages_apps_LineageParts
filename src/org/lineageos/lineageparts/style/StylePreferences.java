@@ -236,7 +236,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
         LineageSettings.System.putInt(getContext().getContentResolver(),
                 LineageSettings.System.BERRY_GLOBAL_STYLE, value);
 
-        setStyleIcon(value);
+        setupStylePref();
         return true;
     }
 

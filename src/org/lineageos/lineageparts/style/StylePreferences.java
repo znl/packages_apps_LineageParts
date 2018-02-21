@@ -68,8 +68,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private StyleStatus mStyleStatus;
 
-    private byte mOkStatus = 0;
-
     @Override
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
@@ -172,8 +170,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 .setMessage(message)
                 .setPositiveButton(R.string.style_automagic_dialog_positive,
                         (dialog, i) -> applyStyle(style))
-                .setNegativeButton(android.R.string.cancel,
-                        (dialog, i) -> increaseOkStatus())
+                .setNegativeButton(android.R.string.cancel, null)
                 .show();
     }
 
@@ -358,19 +355,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
         return activity != null &&
                 activity.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) ==
                         PackageManager.PERMISSION_GRANTED;
-    }
-
-    private void increaseOkStatus() {
-        mOkStatus++;
-        if (mOkStatus != 2) {
-            return;
-        }
-
-        mOkStatus = (byte) 0;
-        new AlertDialog.Builder(getActivity())
-            .setTitle(android.R.string.ok)
-            .setPositiveButton(android.R.string.ok, null)
-            .show();
     }
 
     private static final class AutomagicTask extends AsyncTask<Accent, Void, Style> {

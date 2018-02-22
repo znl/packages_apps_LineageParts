@@ -18,6 +18,7 @@ package org.lineageos.lineageparts.style;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ActivityManager;
 import android.app.WallpaperManager;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -32,11 +33,17 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.preference.Preference;
 import android.support.v7.graphics.Palette;
+import android.support.v14.preference.SwitchPreference;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 import android.content.Intent;
 import android.os.Handler;
+import android.os.ServiceManager;
+import android.os.RemoteException;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
+import android.content.Context;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -63,10 +70,13 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private Preference mStylePref;
     private Preference mAccentPref;
+    private SwitchPreference mForceBlackPref;
 
     private List<Accent> mAccents;
 
     private StyleStatus mStyleStatus;
+
+    private IOverlayManager mOverlayManager;
 
     @Override
     public void onCreate(Bundle savedInstance) {
@@ -74,10 +84,15 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.style_preferences);
 
+        mOverlayManager = IOverlayManager.Stub.asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 
         mStylePref = findPreference("berry_global_style");
         mStylePref.setOnPreferenceChangeListener(this::onStyleChange);
         setupStylePref();
+
+        mForceBlackPref = (SwitchPreference) findPreference("style_force_black");
+        mForceBlackPref.setOnPreferenceChangeListener(this::onForceBlackPrefChange);
+        setupForceBlackPref();
 
         mAccents = AccentUtils.getAccents(getContext(), mStyleStatus);
         mAccentPref = findPreference("style_accent");
@@ -131,6 +146,28 @@ public class StylePreferences extends SettingsPreferenceFragment {
         updateAccentPref(accent);
     }
 
+    private boolean isUsingDarkOrBlackTheme() {
+        if (mOverlayManager == null){
+            mOverlayManager = IOverlayManager.Stub.asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+        }
+        OverlayInfo systemuiThemeInfoDark = null;
+        OverlayInfo systemuiThemeInfoBlack = null;
+        try {
+            systemuiThemeInfoDark = mOverlayManager.getOverlayInfo("org.lineageos.overlay.dark",
+                    ActivityManager.getCurrentUser());
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        try {
+            systemuiThemeInfoBlack = mOverlayManager.getOverlayInfo("org.lineageos.overlay.black",
+                    ActivityManager.getCurrentUser());
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return (systemuiThemeInfoDark != null && systemuiThemeInfoDark.isEnabled()) || 
+               (systemuiThemeInfoBlack != null && systemuiThemeInfoBlack.isEnabled());
+    }
+
     private void updateAccentPref(Accent accent) {
         int size = getResources().getDimensionPixelSize(R.dimen.style_accent_icon);
 
@@ -161,7 +198,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private void onAutomagicCompleted(Style style) {
         String styleType = getString(style.isLight() ?
-                R.string.style_global_entry_light : R.string.style_global_entry_dark).toLowerCase();
+                R.string.style_global_entry_light : R.string.style_global_entry_dark_black).toLowerCase();
         String accentName = style.getAccent().getName().toLowerCase();
         String message = getString(R.string.style_automagic_dialog_content, styleType, accentName);
 
@@ -190,6 +227,23 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 mStyleStatus = StyleStatus.DYNAMIC;
                 break;
         }
+    }
+
+    private void setupForceBlackPref() {
+        int preference = LineageSettings.System.getInt(getContext().getContentResolver(),
+                LineageSettings.System.BERRY_FORCE_BLACK, 0);
+        mForceBlackPref.setChecked(preference == 1);
+        mForceBlackPref.setEnabled(mStyleStatus != StyleStatus.LIGHT_ONLY);
+    }
+
+    private boolean onForceBlackPrefChange(Preference preference, Object newValue) {
+        boolean value = (Boolean) newValue;
+        if (isUsingDarkOrBlackTheme()){
+            reload();
+        }
+        LineageSettings.System.putInt(getContext().getContentResolver(),
+                LineageSettings.System.BERRY_FORCE_BLACK, value ? 1 : 0);
+        return true;
     }
 
     private void applyStyle(Style style) {
@@ -234,6 +288,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 LineageSettings.System.BERRY_GLOBAL_STYLE, value);
 
         setupStylePref();
+        setupForceBlackPref();
         return true;
     }
 

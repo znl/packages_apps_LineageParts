@@ -350,7 +350,7 @@
         <item>@string/style_global_entry_automatic</item>
         <item>@string/style_global_entry_time</item>
         <item>@string/style_global_entry_light</item>
-        <item>@string/style_global_entry_dark</item>
+        <item>@string/style_global_entry_dark_black</item>
     </string-array>
 
     <!-- Global style values -->

@@ -3,4 +3,8 @@
     <!-- Themes -->
     <string name="theme_applied_toast">Theme applied.</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <!-- Black/dark -->
+    <string name="style_global_entry_dark_black">Dark/Black</string>
+    <string name="style_force_black_title">Use black theme</string>
+    <string name="style_force_black_summary">This will replace the dark theme with a black</string>
 </resources>

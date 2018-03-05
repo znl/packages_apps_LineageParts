@@ -77,6 +77,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private StyleInterface mInterface;
     private StyleStatus mStyleStatus;
+    private byte mOkStatus = 0;
 
     private IOverlayManager mOverlayManager;
 
@@ -294,16 +295,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
-        int oldValue = LineageSettings.System.getInt(getContext().getContentResolver(),
-                LineageSettings.System.BERRY_GLOBAL_STYLE, INDEX_WALLPAPER);
-
-        if (oldValue != value){
-            try {
-                reload();
-            }catch (Exception ignored){
-            }
-        }
-
         mInterface.setGlobalStyle(value);
         setStyleIcon(value);
         setupForceBlackPref();
@@ -430,11 +421,23 @@ public class StylePreferences extends SettingsPreferenceFragment {
                         PackageManager.PERMISSION_GRANTED;
     }
 
+    private void increaseOkStatus() {
+        mOkStatus++;
+        if (mOkStatus != 2) {
+            return;
+        }
+
+        mOkStatus = (byte) 0;
+        new AlertDialog.Builder(getActivity())
+            .setTitle(android.R.string.ok)
+            .setPositiveButton(android.R.string.ok, null)
+            .show();
+    }
+
     private static final class AutomagicTask extends AsyncTask<Integer, Void, Suggestion> {
         private final StyleInterface mInterface;
         private final Bitmap mWallpaper;
         private final Callback mCallback;
-        private final Palette mPalette;
 
         AutomagicTask(StyleInterface styleInterface, Bitmap wallpaper, Callback callback) {
             mInterface = styleInterface;

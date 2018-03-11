@@ -86,7 +86,8 @@
   <string name="battery_light_list_title">Farben</string>
   <string name="battery_light_low_color_title">Akku schwach</string>
   <string name="battery_light_medium_color_title">Laden</string>
-  <string name="battery_light_full_color_title">Aufgeladen</string>
+  <string name="battery_light_full_color_title">Fast aufgeladen</string>
+  <string name="battery_light_really_full_color_title">Komplett aufgeladen</string>
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">Benachrichtigungs-LED</string>
   <string name="notification_light_general_title">Allgemein</string>

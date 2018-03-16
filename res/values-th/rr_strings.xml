@@ -3,4 +3,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Themes -->
   <!-- Black/dark -->
+  <string name="style_global_entry_dark_black">Dark Black</string>
+  <string name="style_force_black_title">ใช้ธีมมืด</string>
 </resources>

@@ -5,7 +5,7 @@
   <string name="theme_applied_toast">Тема применена.</string>
   <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
   <!-- Black/dark -->
-  <string name="style_global_entry_dark_black">Темная/Черная</string>
-  <string name="style_force_black_title">Использовать черную тему</string>
-  <string name="style_force_black_summary">Это заменит темную тему черной</string>
+  <string name="style_global_entry_dark_black">Тёмная/Чёрная</string>
+  <string name="style_force_black_title">Использовать чёрную тему</string>
+  <string name="style_force_black_summary">Это заменит тёмную тему чёрной</string>
 </resources>

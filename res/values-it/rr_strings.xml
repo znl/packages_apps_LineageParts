@@ -3,7 +3,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Themes -->
   <string name="theme_applied_toast">Tema applicato.</string>
-  <string name="applying_theme_toast">Applicazione del tema, attendere...</string>
+  <string name="applying_theme_toast">Sto applicando il tema, attendere prego...</string>
   <!-- Black/dark -->
   <string name="style_global_entry_dark_black">Scuro/Nero</string>
   <string name="style_force_black_title">Usa tema nero</string>

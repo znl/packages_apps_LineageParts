@@ -47,4 +47,14 @@
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="lineagestats" />
     </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="trust_category_alerts">
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="trust_notifications"
+            android:title="@string/trust_notification_alerts_title"
+            android:summary="@string/trust_notifications_alerts_summary"
+            android:defaultValue="true" />
+     </PreferenceCategory>
 </PreferenceScreen>

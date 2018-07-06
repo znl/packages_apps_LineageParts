@@ -5,7 +5,7 @@
   <string name="theme_applied_toast">थीम लागू कर दी गई है</string>
   <string name="applying_theme_toast">थीम लागू हो रही है, कृपया प्रतीक्षा करें...</string>
   <!-- Black/dark -->
-  <string name="style_global_entry_dark_black">काला</string>
+  <string name="style_global_entry_dark_black">काला/गहरा </string>
   <string name="style_force_black_title">काले थीम का उपयोग करें</string>
-  <string name="style_force_black_summary">यह अंधेरी थीम को काली थीम में बदल देगा</string>
+  <string name="style_force_black_summary">यह गहरी थीम को काली थीम में बदल देगा</string>
 </resources>

@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Taustavalo</string>
   <string name="button_backlight_enabled">Valaise painikkeet</string>
+  <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettuna</string>
   <string name="keyboard_backlight_enabled">Valaise näppäimistö</string>
   <string name="button_backlight_seekbar_title">Painikkeen kirkkaus</string>
   <string name="keyboard_backlight_seekbar_title">Näppäimistön kirkkaus</string>
@@ -232,6 +233,7 @@
   <string name="power_menu_users_title">Käyttäjän vaihto</string>
   <string name="power_menu_bug_report_title">Virheraportti</string>
   <string name="power_menu_bug_report_disabled">Virheraportointi on poistettu käytöstä kehittäjäasetuksista</string>
+  <string name="power_menu_lockdown_title">Lukitus</string>
   <string name="volume_keys_control_ring_stream_title">Ohjaa soittoäänen äänenvoimakkuutta</string>
   <string name="volume_keys_control_ring_stream_summary_on">Soittoäänen voimakkuuden ohjaus äänenvoimakkuusnäppäimillä</string>
   <string name="volume_keys_control_ring_stream_summary_off">Median äänenvoimakkuuden ohjaus äänenvoimakkuusnäppäimillä</string>
@@ -431,9 +433,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Näytä automaattisen kirkkauden valinta liukusäätimen vieressä</string>
   <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
   <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Tilapalkin kuvakkeet</string>
-  <string name="status_bar_icons_summary">Määritä mitkä tilapalkin kuvakkeet näytetään</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Verkkoliikenne</string>
   <string name="network_traffic_settings_summary">Näyttää verkon nopeuden tilapalkissa</string>
@@ -537,6 +536,7 @@
   <string name="expanded_desktop_style_hide_navigation">Piilota navigointipalkki</string>
   <string name="expanded_desktop_style_hide_both">Piilota molemmat</string>
   <string name="expanded_desktop_nothing_to_show_text">Poista käytöstä mukauttaaksesi laajennetun työpöydän asetuksia sovelluskohtaisesti</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Latausäänet</string>
   <string name="charging_sounds_enabled_title">Ota käyttöön</string>
@@ -594,6 +594,7 @@
   <string name="style_global_entry_light">Vaalea</string>
   <string name="style_global_entry_dark">Tumma</string>
   <string name="style_global_entry_time">Automaattinen (vuorokaudenaika)</string>
+  <string name="style_global_entry_app">Palvelun %1$s hallinnoima</string>
   <string name="style_accent_title">Aksenttiväri</string>
   <string name="style_accent_configuration_not_supported">Nykyinen aksentti ei ole yhteensopiva valitun tyylin kanssa. Jatkaaksesi toinen aksentti on valittava, Haluatko jatkaa?</string>
   <string name="style_accent_configuration_positive">Jatka</string>
@@ -604,4 +605,6 @@ aksentti \nOtetaanko käyttöön?</string>
   <string name="style_automagic_dialog_positive">Hyväksy</string>
   <string name="style_accent_default_name">Oletus</string>
   <string name="style_permission_error">Tallennustilan käyttöoikeus tarvitaan taustakuvan analysointiin, myönnä käyttöoikeus käyttääksesi tätä toimintoa</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

@@ -408,9 +408,6 @@
   <!-- Status bar - Brightness -->
   <string name="status_bar_toggle_brightness">Kontrolli i ndriçimit</string>
   <string name="status_bar_toggle_brightness_summary">Ndrysho ndriçimin duke rrëshqitur gishtin përgjatë shiritit të statusit</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikonat e shiritit të statusit</string>
-  <string name="status_bar_icons_summary">Zgjidh cilat ikona do të shfaqen në shiritin e statusit</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikacionet e mbrojtura</string>
@@ -493,6 +490,7 @@
   <string name="expanded_desktop_style_hide_navigation">Fshih shiritin e lundrimit</string>
   <string name="expanded_desktop_style_hide_both">Fshihi të dyja</string>
   <string name="expanded_desktop_nothing_to_show_text">Fik këtë çelës për të personalizuar individualisht zgjerimin e ekranit për çdo aplikacion</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Tingujt e karikimit</string>
   <string name="charging_sounds_enabled_title">Aktivizo</string>
@@ -536,4 +534,6 @@
   <string name="touchscreen_gesture_action_next_track">Shko te kenga e radhës</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

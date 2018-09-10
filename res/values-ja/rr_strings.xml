@@ -3,9 +3,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Themes -->
   <string name="theme_applied_toast">テーマが適用されました</string>
-  <string name="applying_theme_toast">テーマを適用中です。しばらくお待ちください。</string>
+  <string name="applying_theme_toast">テーマを適用中です。しばらくお待ち下さい...</string>
   <!-- Black/dark -->
-  <string name="style_global_entry_dark_black">ダーク / ブラック</string>
+  <string name="style_global_entry_dark_black">ダーク/ブラック</string>
   <string name="style_force_black_title">ブラックテーマを使用</string>
   <string name="style_force_black_summary">ダークテーマをブラックで置き換える</string>
 </resources>

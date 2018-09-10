@@ -286,7 +286,6 @@
   <!-- Status bar - Brightness -->
   <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
   <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
-  <!-- Status bar - icon blacklist -->
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
@@ -312,9 +311,12 @@
   <string name="expanded_desktop_style_hide_status">Хаваць радок стану</string>
   <string name="expanded_desktop_style_hide_navigation">Схаваць навігацыйны радок</string>
   <string name="expanded_desktop_style_hide_both">Схаваць абедзве</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <!-- Gestures: Touchscreen gestures -->
   <!-- Gesture: Stylus gestures -->
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

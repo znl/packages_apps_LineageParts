@@ -310,9 +310,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Amuesa l\'alternador pal brilléu adautativu cierca l\'eslizador</string>
   <string name="status_bar_toggle_brightness">Control de brilléu</string>
   <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
-  <string name="status_bar_icons_summary">Contola qu\'iconos de la barra d\'estáu s\'amuesen</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplicaciones protexíes</string>
@@ -392,6 +389,7 @@
   <string name="expanded_desktop_style_hide_navigation">Anubrir barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Anubrir dambes</string>
   <string name="expanded_desktop_nothing_to_show_text">Da-y al interruptor pa personalizar el to escritoriu estendíu según cada aplicación</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Soníos de carga</string>
   <string name="charging_sounds_enabled_title">Habilitar</string>
@@ -434,4 +432,6 @@
   <string name="touchscreen_gesture_action_next_track">Saltar a la pista musical de darréu</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

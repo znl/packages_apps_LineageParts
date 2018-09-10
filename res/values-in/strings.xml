@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">Setelan LineageOS</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Memuat\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -76,6 +77,9 @@
   <string name="pulse_speed_slow">Lambat</string>
   <string name="pulse_speed_very_slow">Sangat lambat</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_title">Tingkat kecerahan</string>
+  <string name="light_brightness_normal">Normal</string>
+  <string name="light_brightness_zen">Jangan Ganggu</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Lampu baterai</string>
   <string name="battery_low_pulse_title">Berkedip saat baterai lemah</string>
@@ -139,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Warna akurat ke ruang warna sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Warna akurat ke ruang warna DCI-P3</string>
+  <string name="live_display_reading_mode_title">Modus membaca</string>
+  <string name="live_display_reading_mode_summary">Modus warna abu-abu untuk pembacaan jangka panjang</string>
   <string name="color_calibration_title">Kalibrasi warna</string>
   <string name="color_calibration_summary">Kalibrasi warna layar</string>
   <string name="color_red_title">Merah</string>
@@ -195,9 +201,12 @@
   <string name="volume_answer_call_summary">Menjawab panggilan dengan menekan tombol volume</string>
   <string name="home_answer_call_title">Jawab panggilan</string>
   <string name="home_answer_call_summary">Menjawab panggilan dengan menekan tombol beranda</string>
+  <string name="extras_title">Tambahan</string>
+  <string name="additional_buttons_title">Tombol tambahan</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Lampu latar</string>
   <string name="button_backlight_enabled">Cahaya tombol</string>
+  <string name="button_backlight_only_when_pressed_title">Nyalakan tombol hanya jika ditekan</string>
   <string name="keyboard_backlight_enabled">Terangi papan ketik</string>
   <string name="button_backlight_seekbar_title">Tombol kecerahan</string>
   <string name="keyboard_backlight_seekbar_title">Kecerahan papan ketik</string>
@@ -217,13 +226,16 @@
   <string name="navigation_bar_arrow_keys_summary">Tampilkan tombol kursor kiri dan kanan saat mengetik. Menggantikan pengubah IME.</string>
   <string name="navigation_bar_home_long_press_title">Tindakan menekan lama home</string>
   <string name="navigation_bar_home_double_tap_title">Tindakan dua kali ketuk home</string>
+  <string name="navigation_bar_app_switch_long_press_title">Tindakan menekan lama recent</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menu power</string>
   <string name="power_menu_screenshot_title">Tangkap layar</string>
+  <string name="power_menu_screenshot_summary">Tekan lama untuk menangkap layar sebagian</string>
   <string name="power_menu_airplane_title">Mode pesawat</string>
   <string name="power_menu_users_title">Beralih pengguna</string>
   <string name="power_menu_bug_report_title">Lapor bug</string>
   <string name="power_menu_bug_report_disabled">Pelaporan bug dimatikan dalam opsi pengembang</string>
+  <string name="power_menu_lockdown_title">Kuncian</string>
   <string name="volume_keys_control_ring_stream_title">Kontrol volume nada dering</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tombol volume mengatur volume nada dering</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tombol volume mengontrol volume media</string>
@@ -393,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Atur baris Ikon yang ditampilkan</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Jam</string>
+  <string name="status_bar_clock_show_seconds_title">Tampilkan detik</string>
+  <string name="status_bar_clock_show_seconds_summary">Tampilkan jam, menit, dan detik</string>
   <string name="status_bar_clock_position_title">Posisi jam</string>
   <string name="status_bar_clock_position_right">Kanan</string>
   <string name="status_bar_clock_position_left">Kiri</string>
@@ -423,10 +437,23 @@
   <string name="status_bar_brightness_slider_auto_summary">Tampilkan tombol hidup/matikan kecerahan adaptif di dekat slider</string>
   <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
   <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikon Status bar</string>
-  <string name="status_bar_icons_summary">Atur baris Ikon yang ditampilkan</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_title">Monitor lalu lintas jaringan</string>
+  <string name="network_traffic_settings_summary">Tampilkan tingkat lalu lintas jaringan saat ini di bilah status</string>
+  <string name="network_traffic_mode_title">Modus tampilan</string>
+  <string name="network_traffic_mode_disable">Dimatikan</string>
+  <string name="network_traffic_mode_up">Hanya unggah</string>
+  <string name="network_traffic_mode_down">Hanya unduh</string>
+  <string name="network_traffic_mode_all">Unggah dan unduh</string>
+  <string name="network_traffic_autohide">Sembunyi otomatis</string>
+  <string name="network_traffic_autohide_summary">Sembunyikan monitor lalu lintas ketika tidak ada aktivitas</string>
+  <string name="network_traffic_units_title">Satuan pengukuran lalu lintas</string>
+  <string name="network_traffic_units_kilobits">Kilobit per detik (kb/d)</string>
+  <string name="network_traffic_units_megabits">Megabit per detik (Mb/d)</string>
+  <string name="network_traffic_units_kilobytes">Kilobyte per detik (kB/d)</string>
+  <string name="network_traffic_units_megabytes">Megabyte per detik (MB/d)</string>
+  <string name="network_traffic_show_units">Tampilkan satuan</string>
+  <string name="network_traffic_show_units_summary">Pilihan tampilan satuan pengukuran lalu lintas di bilah status</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikasi dilindungi</string>
   <string name="protected_apps_manager_summary">Kelola aplikasi yang tersembunyi dengan kunci aman</string>
@@ -513,6 +540,8 @@
   <string name="expanded_desktop_style_hide_navigation">Sembunyikan navigasi bar</string>
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplikasi layar penuh</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Suara pengisian daya</string>
   <string name="charging_sounds_enabled_title">Hidupkan</string>
@@ -543,6 +572,11 @@
   <string name="touchscreen_gesture_letter_w_title">Gambar huruf \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Gambar huruf \"Z\"</string>
   <!-- Gesture: Stylus gestures -->
+  <string name="touchscreen_gesture_swipe_up_stylus_title">Usap ke atas dengan stylus</string>
+  <string name="touchscreen_gesture_swipe_down_stylus_title">Usap ke bawah dengan stylus</string>
+  <string name="touchscreen_gesture_swipe_left_stylus_title">Usap ke kiri dengan stylus</string>
+  <string name="touchscreen_gesture_swipe_right_stylus_title">Usap ke kanan dengan stylus</string>
+  <string name="touchscreen_gesture_long_press_stylus_title">Tekan lama dengan stylus</string>
   <string name="touchscreen_gesture_action_dialog_title">Tindakan gerakan</string>
   <string name="touchscreen_gesture_action_do_nothing">Jangan lakukan apa-apa</string>
   <string name="touchscreen_gesture_action_flashlight">Hidup/matikan senter</string>
@@ -554,6 +588,58 @@
   <string name="touchscreen_gesture_action_play_pause_music">Putar/jeda pemutaran musik</string>
   <string name="touchscreen_gesture_action_previous_track">Kembali ke trek musik sebelumnya</string>
   <string name="touchscreen_gesture_action_next_track">Lanjut ke trek musik berikutnya</string>
+  <string name="touchscreen_gesture_action_volume_down">Turunkan volume media</string>
+  <string name="touchscreen_gesture_action_volume_up">Tingkatkan volume media</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Gaya</string>
+  <string name="style_summary">Pilih warna sistem</string>
+  <string name="style_global_title">Gaya</string>
+  <string name="style_global_entry_automatic">Otomatis (wallpaper)</string>
+  <string name="style_global_entry_light">Terang</string>
+  <string name="style_global_entry_dark">Gelap</string>
+  <string name="style_global_entry_time">Otomatis (waktu dalam sehari)</string>
+  <string name="style_global_entry_app">Dikelola oleh %1$s</string>
+  <string name="style_accent_title">Warna aksen</string>
+  <string name="style_accent_configuration_not_supported">Aksen saat ini tidak kompatibel dengan gaya dipilih. Untuk melanjutkan aksen lain yang harus dipilih, apakah Anda ingin melanjutkan?</string>
+  <string name="style_accent_configuration_positive">Lanjutkan</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">Menyetel gaya untuk mencocokkan wallpaper Anda</string>
+  <string name="style_automagic_dialog_content">Gaya yang disarankan: <b>%1$s</b> dengan aksen <b>%2$s</b>. \nApakah Anda ingin menerapkannya?</string>
+  <string name="style_automagic_dialog_positive">Terapkan</string>
+  <string name="style_accent_default_name">Standar</string>
+  <string name="style_dark_overlay_title">Modus gelap</string>
+  <string name="style_dark_overlay_default">Standar</string>
+  <string name="style_dark_overlay_black">Hitam</string>
+  <string name="style_permission_error">Izin akses penyimpanan diperlukan untuk menganalisa wallpaper Anda, silakan izinkan untuk menggunakan fitur ini</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">Status</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Wajib</string>
+  <string name="trust_feature_selinux_value_disabled">Dimatikan</string>
+  <string name="trust_feature_root">Akses root</string>
+  <string name="trust_feature_root_value_disabled">Dimatikan</string>
+  <string name="trust_feature_root_value_adb">ADB saja</string>
+  <string name="trust_feature_root_value_apps">Aplikasi dan ADB</string>
+  <string name="trust_feature_root_explain">Akses root mengizinkan melewati batasan keamanan oleh aplikasi dan layanan yang Anda pilih, mengizinkan mereka melakukan modifikasi pada sistem, yang dapat menyebabkan kerusakan pada perangkat atau OS.</string>
+  <string name="trust_feature_security_patches">Patch keamanan android</string>
+  <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">terbaru</string>
+  <string name="trust_feature_security_patches_value_medium">beberapa bulan</string>
+  <string name="trust_feature_security_patches_value_old">kadaluarsa</string>
+  <string name="trust_feature_encryption">Enkripsi</string>
+  <string name="trust_feature_encryption_value_enabled">Dihidupkan</string>
+  <string name="trust_feature_encryption_value_nolock">Memerlukan kunci layar aman</string>
+  <string name="trust_feature_encryption_value_disabled">Dimatikan</string>
+  <string name="trust_feature_encryption_explain">Mengenkripsi perangkat Anda mencegah akses ke data saat telepon tidak aktif atau dalam modus recovery. Hal ini sangat penting jika telepon Anda dicuri, dan mencegah orang lain membaca pesan, kontak, dan informasi pribadi Anda lainnya tanpa kata sandi.\nUntuk membuat enkripsi lebih efektif Anda perlu mengatur kunci layar aman.</string>
+  <string name="trust_category_tools">Privasi</string>
+  <string name="trust_notification_alerts_title">Peringatan keamanan</string>
+  <string name="trust_warnings_selinux">Status SELinux</string>
+  <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
+  <string name="trust_onboarding_done">Mengerti</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Batas pesan SMS</string>
+  <string name="sms_security_check_limit_summary">Aplikasi dapat mengirim %s pesan dalam 1 menit sebelum konfirmasi</string>
+  <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>
+  <string name="sms_security_check_limit_always_confirm">Selalu konfirmasi</string>
 </resources>

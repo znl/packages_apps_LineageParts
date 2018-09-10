@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Renkler sRGB renk aralığına göre doğru</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">DCI-P3 renk alanına uygun renkler</string>
+  <string name="live_display_reading_mode_title">Okuma modu</string>
+  <string name="live_display_reading_mode_summary">Uzun süreli okuma için gri tonlama modu</string>
   <string name="color_calibration_title">Renk kalibrasyonu</string>
   <string name="color_calibration_summary">Ekran renklerini kalibre edin</string>
   <string name="color_red_title">Kırmızı</string>
@@ -204,6 +206,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Aydınlatma ışığı</string>
   <string name="button_backlight_enabled">Tuşları aydınlat</string>
+  <string name="button_backlight_only_when_pressed_title">Tuşları, sadece basıldığında aydınlat</string>
   <string name="keyboard_backlight_enabled">Klavyeyi aydınlat</string>
   <string name="button_backlight_seekbar_title">Tuş parlaklığı</string>
   <string name="keyboard_backlight_seekbar_title">Klavye parlaklığı</string>
@@ -232,6 +235,7 @@
   <string name="power_menu_users_title">Kullanıcı değiştir</string>
   <string name="power_menu_bug_report_title">Hata raporu</string>
   <string name="power_menu_bug_report_disabled">Hata raporlama geliştirici ayarlarında devre dışı bırakıldı</string>
+  <string name="power_menu_lockdown_title">Kilitle</string>
   <string name="volume_keys_control_ring_stream_title">Zil sesi düzeyini kontrol et</string>
   <string name="volume_keys_control_ring_stream_summary_on">Ses tuşları zil sesi düzeyini kontrol eder</string>
   <string name="volume_keys_control_ring_stream_summary_off">Ses tuşları medya seslerinin düzeyini kontrol eder</string>
@@ -401,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Hangi durum çubuğu simgelerinin gösterildiğini kontrol edin</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Saat</string>
+  <string name="status_bar_clock_show_seconds_title">Saniye göster</string>
+  <string name="status_bar_clock_show_seconds_summary">Saati, dakikayı ve saniyeyi göster</string>
   <string name="status_bar_clock_position_title">Saat konumu</string>
   <string name="status_bar_clock_position_right">Sağ</string>
   <string name="status_bar_clock_position_left">Sol</string>
@@ -431,26 +437,23 @@
   <string name="status_bar_brightness_slider_auto_summary">Otomatik parlaklık simgesini hızlı ayarlarda göster</string>
   <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
   <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
-  <string name="status_bar_icons_summary">Gösterilen durum çubuğu simgelerini kontrol et</string>
   <!-- Status bar - Network Traffic -->
-  <string name="network_traffic_settings_title">Ağ trafik göstergesi</string>
-  <string name="network_traffic_settings_summary">Durum çubuğunda geçerli ağ trafiği düzeylerini göster</string>
-  <string name="network_traffic_mode_title">Görüntü modu</string>
+  <string name="network_traffic_settings_title">Ağ trafiği göstergesi</string>
+  <string name="network_traffic_settings_summary">Durum çubuğunda geçerli ağ trafiği seviyelerini göster</string>
+  <string name="network_traffic_mode_title">Görüntüleme modu</string>
   <string name="network_traffic_mode_disable">Devre dışı</string>
   <string name="network_traffic_mode_up">Yalnızca yükleme</string>
   <string name="network_traffic_mode_down">Yalnızca indirme</string>
-  <string name="network_traffic_mode_all">Yükleme ve İndirme</string>
+  <string name="network_traffic_mode_all">Yükleme ve indirme</string>
   <string name="network_traffic_autohide">Otomatik gizle</string>
-  <string name="network_traffic_autohide_summary">Hiçbir etkinlik olmadığında ağ trafiği göstergesini gizle</string>
-  <string name="network_traffic_units_title">Trafik ölçme birimleri</string>
+  <string name="network_traffic_autohide_summary">Etkinlik olmadığında ağ göstergesini gizle</string>
+  <string name="network_traffic_units_title">Ağ ölçme birimi</string>
   <string name="network_traffic_units_kilobits">Saniyede kilobit (kb/s)</string>
   <string name="network_traffic_units_megabits">Saniyede megabit (Mb/s)</string>
   <string name="network_traffic_units_kilobytes">Saniyede kilobayt (kB/s)</string>
   <string name="network_traffic_units_megabytes">Saniyede megabayt (MB/sn)</string>
   <string name="network_traffic_show_units">Birimleri göster</string>
-  <string name="network_traffic_show_units_summary">Durum çubuğunda trafik ölçüm birimlerinin gösterilip gösterilmeyeceği</string>
+  <string name="network_traffic_show_units_summary">Durum çubuğunda ağ ölçme birimlerinin gösterilip gösterilmeyeceği</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Korunan uygulamalar</string>
   <string name="protected_apps_manager_summary">Güvenli kilitlemenin arkasında hangi uygulamaların gizlendiğini yönetin</string>
@@ -539,6 +542,9 @@
   <string name="expanded_desktop_style_hide_navigation">Gezinme çubuğunu gizle</string>
   <string name="expanded_desktop_style_hide_both">İkisini de gizle</string>
   <string name="expanded_desktop_nothing_to_show_text">Genişletilmiş masaüstünüzü uygulama bazında özelleştirmek için kapatın</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Tam ekran uygulamaları</string>
+  <string name="long_screen_settings_summary">Eski uygulamaların tam ekranın en boy oranını kullanmasına zorlanır</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Şarj sesleri</string>
   <string name="charging_sounds_enabled_title">Etkin</string>
@@ -553,6 +559,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Dokunmatik ekran hareketi algılandığında titre</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">İki parmakla aşağı kaydır</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Bir parmakla yukarı kaydır</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Ana ekran tuşunu yukarı doğru kaydırın</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Bir parmakla aşağı kaydır</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Bir parmakla sola kaydır</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Bir parmakla sağa kaydır</string>
@@ -596,6 +603,7 @@
   <string name="style_global_entry_light">Aydınlık</string>
   <string name="style_global_entry_dark">Karanlık</string>
   <string name="style_global_entry_time">Otomatik (günün saati)</string>
+  <string name="style_global_entry_app">%1$s tarafından yönetiliyor</string>
   <string name="style_accent_title">Vurgu rengi</string>
   <string name="style_accent_configuration_not_supported">Mevcut vurgu rengi seçilen stille uyumlu değil. Devam etmek için başka bir vurgu rengi seçilmesi gerekiyor, devam etmek istiyor musunuz?</string>
   <string name="style_accent_configuration_positive">Devam et</string>
@@ -604,5 +612,45 @@
   <string name="style_automagic_dialog_content">Önerilen stil: <b>%1$s</b> arka plan <b>%2$s</b> vurgu rengi.\nUygulamak istiyor musunuz?</string>
   <string name="style_automagic_dialog_positive">Uygula</string>
   <string name="style_accent_default_name">Varsayılan</string>
+  <string name="style_dark_overlay_title">Karanlık mod</string>
+  <string name="style_dark_overlay_default">Varsayılan</string>
+  <string name="style_dark_overlay_black">Siyah</string>
   <string name="style_permission_error">Depolama alanına erişim izni, duvar kağıdınızı analiz etmek için gereklidir, lütfen bu özelliğin kullanılmasına izin verin</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olmak için gösterilir.</string>
+  <string name="trust_category_features">Durum</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Zorunlu</string>
+  <string name="trust_feature_selinux_value_disabled">Devre dışı</string>
+  <string name="trust_feature_selinux_explain">SELinux hangi işlemlerin cihazınızdaki hangi dosyalara erişebileceğini belirler.\nBu uygulamaların ve hizmetlerin ele almamaları gereken dosyalara erişmelerini önler: bu şekilde kötü amaçlı bir işlemin erişimi sınırlı olduğundan güvenliğiniz korunur.</string>
+  <string name="trust_feature_root">Kök erişimi</string>
+  <string name="trust_feature_root_value_disabled">Devre dışı</string>
+  <string name="trust_feature_root_value_adb">Sadece ADB</string>
+  <string name="trust_feature_root_value_apps">Uygulamalar ve ADB</string>
+  <string name="trust_feature_root_explain">Kök erişimi seçtiğiniz uygulama ve hizmetlerin güvenlik sınırlamalarının atlanmasına izin vererek, sistemde değişiklik yapmasına ve cihazınızda veya işletim sisteminizde hasara neden olabilir.</string>
+  <string name="trust_feature_security_patches">Android güvenlik yaması</string>
+  <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">güncel</string>
+  <string name="trust_feature_security_patches_value_medium">bir kaç aylık</string>
+  <string name="trust_feature_security_patches_value_old">eski</string>
+  <string name="trust_feature_security_patches_explain">Güvenlik açıklarını ve güvenlik kısıtlamalarını atlamak cihazınızda geçici veya kalıcı bir hasar meydana getirmek için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek sistemdeki kusurları gidermek amacıyla Google ve SoC satıcıları tarafından aylık olarak yayınlanır.\nYazılım yamaları her ay global olarak güncellendiğinde üretici yamaları zaman zaman OEM\'den güncellenir.\nCihazınızı güvende tutmak için LineageOS yapınızın daima güncel olduğundan emin olun.</string>
+  <string name="trust_feature_encryption">Şifreleme</string>
+  <string name="trust_feature_encryption_value_enabled">Etkin</string>
+  <string name="trust_feature_encryption_value_nolock">Güvenli bir kilit ekranına ihtiyaç duyar</string>
+  <string name="trust_feature_encryption_value_disabled">Devre dışı</string>
+  <string name="trust_feature_encryption_explain">Cihazınızı şifrelemek, telefonunuz kapalıyken veya kurtarma modundayken verilerinize erişimi engeller. Bu özellikle telefonunuz çalındığında önemlidir ve diğer insanların mesajlarınızı, kişilerinizi ve diğer kişisel bilgilerinizi şifre olmadan okumasını önler.\nŞifrelemeyi daha etkili hale getirmek için güvenli bir kilit ekranı ayarlamanız gerekir.</string>
+  <string name="trust_category_tools">Gizlilik</string>
+  <string name="trust_notification_alerts_title">Güvenlik uyarıları</string>
+  <string name="trust_warnings_alerts_intro">Uyarılmak istediğiniz güvenlik sorunlarını seçebilirsiniz. Güvenliğiniz için tüm uyarıları etkinleştirmeniz önerilir</string>
+  <string name="trust_warnings_selinux">SELinux durumu</string>
+  <string name="trust_warnings_keys">Yapı imzası</string>
+  <string name="trust_onboarding_title">Trust\'a merhaba de</string>
+  <string name="trust_onboarding_description">Trust, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
+  <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>
+  <string name="trust_onboarding_done">Anladım</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS mesaj limiti</string>
+  <string name="sms_security_check_limit_summary">Uygulamalar onay gerektirmeden önce %s mesajını 1 dakika içinde gönderebilir</string>
+  <string name="sms_security_check_limit_summary_none">Uygulamaların onay almadan mesaj göndermesine izin verilmez</string>
+  <string name="sms_security_check_limit_always_confirm">Her zaman onayla</string>
 </resources>

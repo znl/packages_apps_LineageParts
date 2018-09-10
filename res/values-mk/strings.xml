@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Покажи го менувачот за адаптивна осветленост во близина на лизгачот</string>
   <string name="status_bar_toggle_brightness">Контрола на осветленост</string>
   <string name="status_bar_toggle_brightness_summary">Прилагодете ја осветленоста со лизгање низ статусната лента</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Икони на статусната лента</string>
-  <string name="status_bar_icons_summary">Контролирајте кои икони на статусната лента се прикажани</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Заштитени апликации</string>
@@ -513,6 +510,7 @@
   <string name="expanded_desktop_style_hide_navigation">Сокриј ја лентата за навигација</string>
   <string name="expanded_desktop_style_hide_both">Сокриј ги двете</string>
   <string name="expanded_desktop_nothing_to_show_text">Исклучете го прекинувачот за да ја прилагодите проширената работна површина за секоја апликација</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Звуци за полнење</string>
   <string name="charging_sounds_enabled_title">Овозможи</string>
@@ -563,4 +561,6 @@
   <string name="touchscreen_gesture_action_volume_up">Зголеми го гласот за музика</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

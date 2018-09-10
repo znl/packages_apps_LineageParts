@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Cores fidedignas ao espaço de cores sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Cores fidedignas ao espaço de cores DCI-P3</string>
+  <string name="live_display_reading_mode_title">Modo de leitura</string>
+  <string name="live_display_reading_mode_summary">Modo de tons de cinza para longos períodos de leitura</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibra as cores da tela</string>
   <string name="color_red_title">Vermelho</string>
@@ -204,13 +206,14 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Luz de fundo</string>
   <string name="button_backlight_enabled">Iluminar botões</string>
+  <string name="button_backlight_only_when_pressed_title">Iluminar botões apenas ao tocar</string>
   <string name="keyboard_backlight_enabled">Iluminar teclado</string>
   <string name="button_backlight_seekbar_title">Brilho dos botões</string>
   <string name="keyboard_backlight_seekbar_title">Brilho do teclado</string>
   <string name="backlight_timeout_title">Duração do brilho</string>
   <string name="backlight_timeout_unlimited">Não desligar</string>
   <string name="backlight_summary_disabled">Desativado</string>
-  <string name="backlight_summary_enabled_with_timeout">Ativado por <xliff:g xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" id="timeout">%s</xliff:g></string>
+  <string name="backlight_summary_enabled_with_timeout">Ativado por <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">Ativado</string>
   <!-- Buttons - Enable navbar -->
   <string name="disable_navkeys_title">Ativar barra de navegação na tela</string>
@@ -232,6 +235,7 @@
   <string name="power_menu_users_title">Alternador de usuário</string>
   <string name="power_menu_bug_report_title">Relatório de erros</string>
   <string name="power_menu_bug_report_disabled">Relatório de erros desativado nas configurações de desenvolvedor</string>
+  <string name="power_menu_lockdown_title">Bloquear</string>
   <string name="volume_keys_control_ring_stream_title">Controle de volume do toque</string>
   <string name="volume_keys_control_ring_stream_summary_on">Botões de volume controlam o volume do toque</string>
   <string name="volume_keys_control_ring_stream_summary_off">Teclas de volume controlam o volume da mídia</string>
@@ -401,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controlar quais ícones são exibidas na barra de status</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Relógio</string>
+  <string name="status_bar_clock_show_seconds_title">Mostrar segundos</string>
+  <string name="status_bar_clock_show_seconds_summary">Mostrar horas, minutos e segundos</string>
   <string name="status_bar_clock_position_title">Posição do relógio</string>
   <string name="status_bar_clock_position_right">Direita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -431,9 +437,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Exibir controle para brilho da tela adaptável perto do controle deslizante</string>
   <string name="status_bar_toggle_brightness">Controle de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ícones da barra de status</string>
-  <string name="status_bar_icons_summary">Controle quais ícones da barra de status são mostrados</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
   <string name="network_traffic_settings_summary">Mostrar na barra de status os níveis de tráfego de rede atual</string>
@@ -537,6 +540,8 @@
   <string name="expanded_desktop_style_hide_navigation">Ocultar a barra de navegação</string>
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o alternador para personalizar a área de trabalho expandida por aplicativo</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicativos em tela cheia</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de carregamento</string>
   <string name="charging_sounds_enabled_title">Ativar</string>
@@ -594,6 +599,7 @@
   <string name="style_global_entry_light">Claro</string>
   <string name="style_global_entry_dark">Escuro</string>
   <string name="style_global_entry_time">Automático (baseado na hora do dia)</string>
+  <string name="style_global_entry_app">Gerenciado por %1$s</string>
   <string name="style_accent_title">Cor de realce</string>
   <string name="style_accent_configuration_not_supported">A cor de realce atual não é compatível com o estilo selecionado. Para continuar, é preciso escolher outra cor. Deseja continuar?</string>
   <string name="style_accent_configuration_positive">Continuar</string>
@@ -602,5 +608,31 @@
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> com <b>%2$s</b> como cor de realce.\nDeseja aplicá-lo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Padrão</string>
+  <string name="style_dark_overlay_title">Modo escuro</string>
+  <string name="style_dark_overlay_default">Padrão</string>
+  <string name="style_dark_overlay_black">Preto</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar o seu papel de parede. Por favor, conceda a permissão para usar este recurso.</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">Estado</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Impondo</string>
+  <string name="trust_feature_selinux_value_disabled">Desligado</string>
+  <string name="trust_feature_root">Acesso de superusuário</string>
+  <string name="trust_feature_root_value_disabled">Desligado</string>
+  <string name="trust_feature_root_value_apps">Aplicativos e ADB</string>
+  <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">atualizado</string>
+  <string name="trust_feature_security_patches_value_old">desatualizado</string>
+  <string name="trust_feature_encryption">Criptografia</string>
+  <string name="trust_feature_encryption_value_enabled">Ligada</string>
+  <string name="trust_feature_encryption_value_disabled">Desligada</string>
+  <string name="trust_category_tools">Privacidade</string>
+  <string name="trust_notification_alerts_title">Alertas de segurança</string>
+  <string name="trust_onboarding_title">Diga olá a Confiança</string>
+  <string name="trust_onboarding_learn_more">Saiba mais</string>
+  <string name="trust_onboarding_done">Entendi</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
+  <string name="sms_security_check_limit_always_confirm">Confirmar sempre</string>
 </resources>

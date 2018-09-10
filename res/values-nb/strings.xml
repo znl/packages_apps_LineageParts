@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
   <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
   <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Statuslinjeikoner</string>
-  <string name="status_bar_icons_summary">Kontroller hvilke av status ikonene som skal vises</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beskyttede apper</string>
@@ -513,6 +510,7 @@
   <string name="expanded_desktop_style_hide_navigation">Skjul navigasjonslinjen</string>
   <string name="expanded_desktop_style_hide_both">Skjul begge</string>
   <string name="expanded_desktop_nothing_to_show_text">Slå av for å tilpasse utvidet skrivebord på per-app basis</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Lade-lyder</string>
   <string name="charging_sounds_enabled_title">Aktiver</string>
@@ -556,4 +554,6 @@
   <string name="touchscreen_gesture_action_next_track">Hopp til neste musikkspor</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Colors fidels a l\'espai de colors sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Colors fidels a l\'espai de colors DCI-P3</string>
+  <string name="live_display_reading_mode_title">Mode lectura</string>
+  <string name="live_display_reading_mode_summary">Mode d\'escala de grisos per a la lectura a llarg termini</string>
   <string name="color_calibration_title">Calibració de color</string>
   <string name="color_calibration_summary">Calibra els colors de la pantalla</string>
   <string name="color_red_title">Vermell</string>
@@ -204,6 +206,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Retroil·luminació</string>
   <string name="button_backlight_enabled">Il·lumina els botons</string>
+  <string name="button_backlight_only_when_pressed_title">Il·lumina els botons només quan es premin</string>
   <string name="keyboard_backlight_enabled">Il·lumina el teclat</string>
   <string name="button_backlight_seekbar_title">Lluminositat dels botons</string>
   <string name="keyboard_backlight_seekbar_title">Lluminositat del teclat</string>
@@ -232,6 +235,7 @@
   <string name="power_menu_users_title">Intercanviador d\'usuaris</string>
   <string name="power_menu_bug_report_title">Informe d\'error</string>
   <string name="power_menu_bug_report_disabled">Els informes d\'error estan deshabilitats a les opcions de desenvolupament</string>
+  <string name="power_menu_lockdown_title">Bloqueig</string>
   <string name="volume_keys_control_ring_stream_title">Controla el volum de la trucada</string>
   <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volum controlen el volum del to de trucada</string>
   <string name="volume_keys_control_ring_stream_summary_off">Les tecles de volum controlen el volum multimèdia</string>
@@ -401,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Rellotge</string>
+  <string name="status_bar_clock_show_seconds_title">Mostra els segons</string>
+  <string name="status_bar_clock_show_seconds_summary">Mostra hores, minuts i segons</string>
   <string name="status_bar_clock_position_title">Posició del rellotge</string>
   <string name="status_bar_clock_position_right">Dreta</string>
   <string name="status_bar_clock_position_left">Esquerra</string>
@@ -431,9 +437,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Mostra el botó de lluminositat automàtica al costat de la barra</string>
   <string name="status_bar_toggle_brightness">Control de lluminositat</string>
   <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Icones de la barra d\'estat</string>
-  <string name="status_bar_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor de trànsit de xarxa</string>
   <string name="network_traffic_settings_summary">Mostra els nivells actuals de trànsit de xarxa a la barra d\'estat</string>
@@ -537,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Amaga la barra de navegació</string>
   <string name="expanded_desktop_style_hide_both">Amaga els dos</string>
   <string name="expanded_desktop_nothing_to_show_text">Apaga l\'interruptor per personalitzar el teu escriptori extès segons cada aplicació</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicacions a pantalla completa</string>
+  <string name="long_screen_settings_summary">Força les aplicacions heretades per utilitzar la relació d\'aspecte de pantalla completa</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de càrrega</string>
   <string name="charging_sounds_enabled_title">Habilita</string>
@@ -594,6 +600,7 @@
   <string name="style_global_entry_light">Clar</string>
   <string name="style_global_entry_dark">Fosc</string>
   <string name="style_global_entry_time">Automàtic (segons l\'hora del dia)</string>
+  <string name="style_global_entry_app">Gestionat per %1$s</string>
   <string name="style_accent_title">Color d\'èmfasi</string>
   <string name="style_accent_configuration_not_supported">L\'accent actual no és compatible amb l\'estil seleccionat. Per poder procedir s\'haurà de seleccionar un altre accent, vols continuar?</string>
   <string name="style_accent_configuration_positive">Procedeix</string>
@@ -602,5 +609,45 @@
   <string name="style_automagic_dialog_content">Estil suggerit: <b>%1$s</b> amb accent de <b>%2$s</b>.\nVols aplicar-lo?</string>
   <string name="style_automagic_dialog_positive">Aplica</string>
   <string name="style_accent_default_name">Predeterminat</string>
+  <string name="style_dark_overlay_title">Mode fosc</string>
+  <string name="style_dark_overlay_default">Per defecte</string>
+  <string name="style_dark_overlay_black">Negre</string>
   <string name="style_permission_error">Es necessita el permís d\'accés a l\'emmagatzematge per analitzar el teu fons de pantalla, si us plau otorga\'l per utilitzar aquesta característica</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust us permet mantenir el dispositiu segur i protegir la vostra privadesa.\nLa icona Trust apareix per ajudar-vos a consultar la seguretat dels continguts.</string>
+  <string name="trust_category_features">Estat</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Forçat</string>
+  <string name="trust_feature_selinux_value_disabled">Desactivat</string>
+  <string name="trust_feature_selinux_explain">SELinux defineix quins processos tenen accés als fitxers del vostre dispositiu.\nAixò impedeix que les aplicacions i els serveis tinguin accés a arxius que no han de tractar: d\'aquesta manera un procés maliciós té un accés limitat perquè es preservi la vostra seguretat.</string>
+  <string name="trust_feature_root">Accés arrel</string>
+  <string name="trust_feature_root_value_disabled">Desactivat</string>
+  <string name="trust_feature_root_value_adb">Només ADB</string>
+  <string name="trust_feature_root_value_apps">Aplicacions i ADB</string>
+  <string name="trust_feature_root_explain">L\'accés arrel permet evitar les restriccions de seguretat de les aplicacions i serveis que trieu, permetent-los fer modificacions al sistema, que poden causar danys al vostre dispositiu o SO.</string>
+  <string name="trust_feature_security_patches">Pedaços de seguretat d\'Android</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProveïdor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">actualitzat</string>
+  <string name="trust_feature_security_patches_value_medium">alguns mesos desfasat</string>
+  <string name="trust_feature_security_patches_value_old">obsolet</string>
+  <string name="trust_feature_security_patches_explain">Els pedaços de seguretat es publiquen mensualment per Google i els proveïdors de SoC per solucionar defectes en el sistema que podrien ser explotats per aplicacions malicioses per evitar les restriccions de seguretat i causar danys temporals o permanents al dispositiu.\nTot i que els pedaços de plataformes s\'actualitzen globalment cada mes, els pedaços dels proveïdors s\'actualitzen de tant en tant per part de l\'OEM.\nPer mantenir el dispositiu segur, assegureu-vos que la vostra versió de LineageOS estigui sempre actualitzada.</string>
+  <string name="trust_feature_encryption">Xifrat</string>
+  <string name="trust_feature_encryption_value_enabled">Activat</string>
+  <string name="trust_feature_encryption_value_nolock">Necessita una pantalla de bloqueig segura</string>
+  <string name="trust_feature_encryption_value_disabled">Desactivat</string>
+  <string name="trust_feature_encryption_explain">El xifrat del dispositiu impedeix l\'accés a les vostres dades quan el telèfon estigui apagat o en mode recuperació. Això és especialment important si el telèfon és robat, i evita que la gent llegeixi els vostres missatges, contactes i altra informació privada sense la contrasenya.\nPer fer que el xifratge sigui més eficaç, cal establir una pantalla de bloqueig segura.</string>
+  <string name="trust_category_tools">Privadesa</string>
+  <string name="trust_notification_alerts_title">Alertes de seguretat</string>
+  <string name="trust_warnings_alerts_intro">Podeu seleccionar els problemes de seguretat dels que desitgeu que li advertim. Per a la vostra seguretat, es recomana activar totes les alertes</string>
+  <string name="trust_warnings_selinux">Estat de SELinux</string>
+  <string name="trust_warnings_keys">Signatura de compilació</string>
+  <string name="trust_onboarding_title">Digues hola a Trust</string>
+  <string name="trust_onboarding_description">Trust us ajuda a mantenir el dispositiu segur i a protegir la vostra privadesa.\nLa icona Trust apareixerà per ajudar-vos a consultar la seguretat dels continguts</string>
+  <string name="trust_onboarding_learn_more">Aprèn més</string>
+  <string name="trust_onboarding_done">D\'acord</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Límit de missatges SMS</string>
+  <string name="sms_security_check_limit_summary">Les aplicacions poden enviar %s missatges en 1 minut abans de necessitar una confirmació</string>
+  <string name="sms_security_check_limit_summary_none">Les aplicacions no tenen permès enviar cap missatge sense confirmar-ho</string>
+  <string name="sms_security_check_limit_always_confirm">Confirma-ho sempre</string>
 </resources>

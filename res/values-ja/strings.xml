@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">LineageOS の設定</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">読み込み中...</string>
   <string name="dlg_ok">OK</string>
@@ -76,6 +77,9 @@
   <string name="pulse_speed_slow">遅い</string>
   <string name="pulse_speed_very_slow">非常に遅い</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_title">明るさのレベル</string>
+  <string name="light_brightness_normal">標準</string>
+  <string name="light_brightness_zen">おやすみモード</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">電池のライト</string>
   <string name="battery_low_pulse_title">残量低下時に点滅</string>
@@ -139,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">正確な sRGB 色空間に補正します</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">正確な DCI-P3 色空間に補正します</string>
+  <string name="live_display_reading_mode_title">読書モード</string>
+  <string name="live_display_reading_mode_summary">長期間読書するのに適した、グレースケールモードに変更します</string>
   <string name="color_calibration_title">色の調整</string>
   <string name="color_calibration_summary">画面の色を調整する</string>
   <string name="color_red_title">赤</string>
@@ -189,15 +195,18 @@
   <string name="power_end_call_title">通話を終了</string>
   <string name="power_end_call_summary">電源ボタンを押して現在の通話を終了する</string>
   <string name="swap_volume_buttons_title">再配置</string>
-  <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替える</string>
+  <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替えます</string>
   <string name="button_wake_title">端末をスリープ解除</string>
   <string name="volume_answer_call_title">着信に応答</string>
   <string name="volume_answer_call_summary">音量ボタンを押して着信に応答する</string>
   <string name="home_answer_call_title">着信に応答</string>
   <string name="home_answer_call_summary">ホームボタンを押して着信に応答する</string>
+  <string name="extras_title">追加機能</string>
+  <string name="additional_buttons_title">追加のボタン</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">バックライト</string>
   <string name="button_backlight_enabled">ボタンを点灯</string>
+  <string name="button_backlight_only_when_pressed_title">ボタンを押したときだけ光らせる</string>
   <string name="keyboard_backlight_enabled">キーボードを点灯</string>
   <string name="button_backlight_seekbar_title">ボタンの明るさ</string>
   <string name="keyboard_backlight_seekbar_title">キーボードの明るさ</string>
@@ -217,13 +226,16 @@
   <string name="navigation_bar_arrow_keys_summary">入力中は左右の矢印ボタンを表示します。IMEの切り替えアイコンは無効になります。</string>
   <string name="navigation_bar_home_long_press_title">ホームボタン長押しの動作</string>
   <string name="navigation_bar_home_double_tap_title">ホームボタンのダブルタップの動作</string>
+  <string name="navigation_bar_app_switch_long_press_title">履歴ボタンを長押ししたときの動作</string>
   <!-- Power menu -->
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_screenshot_title">スクリーンショット</string>
+  <string name="power_menu_screenshot_summary">長押しして指定した範囲を撮影します</string>
   <string name="power_menu_airplane_title">機内モード</string>
   <string name="power_menu_users_title">ユーザーの切り替え</string>
   <string name="power_menu_bug_report_title">バグレポート</string>
   <string name="power_menu_bug_report_disabled">バグレポートは開発者向けオプションで無効になっています</string>
+  <string name="power_menu_lockdown_title">ロックダウン</string>
   <string name="volume_keys_control_ring_stream_title">着信音量のコントロール</string>
   <string name="volume_keys_control_ring_stream_summary_on">音量キーで着信音量をコントロールする</string>
   <string name="volume_keys_control_ring_stream_summary_off">音量キーでメディア音量をコントロールする</string>
@@ -256,7 +268,7 @@
   <string name="profile_setup_actions_title_config">動作を再設定</string>
   <string name="wireless_networks_settings_title">無線とネットワーク</string>
   <!-- Profile triggers -->
-  <string name="no_bluetooth_triggers">ペアリングしているBluetoothデバイスがありません。\nタップするとトリガーを設定する前にBluetoothデバイスとペアリングします。</string>
+  <string name="no_bluetooth_triggers">ペアリングしている Bluetooth デバイスがありません。\nタップするとトリガーを設定する前に Bluetooth デバイスとペアリングします。</string>
   <string name="no_wifi_triggers">設定されているWi\u2011Fiアクセスポイントがありません。\nタップするとトリガーを設定する前にWi\u2011Fiに接続します。</string>
   <string name="no_triggers_configured">設定されているトリガーがありません。タップして追加します。</string>
   <string name="no_triggers_configured_nfc">タップして新しいNFCトリガーをセットアップします。</string>
@@ -393,6 +405,8 @@
   <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">時計</string>
+  <string name="status_bar_clock_show_seconds_title">秒を表示</string>
+  <string name="status_bar_clock_show_seconds_summary">時間、分、秒を表示します</string>
   <string name="status_bar_clock_position_title">時計のスタイル</string>
   <string name="status_bar_clock_position_right">右</string>
   <string name="status_bar_clock_position_left">左</string>
@@ -422,11 +436,24 @@
   <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
   <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
   <string name="status_bar_toggle_brightness">明るさコントロール</string>
-  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">ステータスバーのアイコン</string>
-  <string name="status_bar_icons_summary">ステータスバーに表示するアイコンをコントロールする</string>
+  <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
+  <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
+  <string name="network_traffic_mode_title">表示モード</string>
+  <string name="network_traffic_mode_disable">無効</string>
+  <string name="network_traffic_mode_up">アップロードのみ</string>
+  <string name="network_traffic_mode_down">ダウンロードのみ</string>
+  <string name="network_traffic_mode_all">アップロードとダウンロード</string>
+  <string name="network_traffic_autohide">自動的に隠す</string>
+  <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
+  <string name="network_traffic_units_title">トラフィックの単位</string>
+  <string name="network_traffic_units_kilobits">キロビット/秒 (kb/s)</string>
+  <string name="network_traffic_units_megabits">メガビット/秒 (Mb/s)</string>
+  <string name="network_traffic_units_kilobytes">キロバイト/秒 (kB/s)</string>
+  <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
+  <string name="network_traffic_show_units">単位を表示</string>
+  <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">アプリの保護</string>
   <string name="protected_apps_manager_summary">パスワードでロックしている場合に非表示にするアプリを管理する</string>
@@ -513,10 +540,13 @@
   <string name="expanded_desktop_style_hide_navigation">ナビゲーションバーを非表示</string>
   <string name="expanded_desktop_style_hide_both">両方を非表示</string>
   <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">全画面表示のアプリ</string>
+  <string name="long_screen_settings_summary">従来のアプリに全画面表示のアスペクト比を使用させる</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充電時の音</string>
   <string name="charging_sounds_enabled_title">有効</string>
-  <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らす</string>
+  <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
   <string name="power_notifications_vibrate_title">バイブレーション</string>
   <string name="charging_sounds_ringtone_title">通知音</string>
   <string name="charging_sounds_ringtone_silent">サイレント</string>
@@ -563,4 +593,61 @@
   <string name="touchscreen_gesture_action_volume_up">メディア音量を上げる</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">スタイル</string>
+  <string name="style_summary">システムの色を選択</string>
+  <string name="style_global_title">スタイル</string>
+  <string name="style_global_entry_automatic">自動設定（壁紙に合わせる）</string>
+  <string name="style_global_entry_light">ライト</string>
+  <string name="style_global_entry_dark">ダーク</string>
+  <string name="style_global_entry_time">自動設定（時間帯に合わせる）</string>
+  <string name="style_global_entry_app">%1$s による管理</string>
+  <string name="style_accent_title">アクセントカラー</string>
+  <string name="style_accent_configuration_not_supported">現在のアクセントは選択したスタイルと互換性がないため、別のアクセントを選択する必要があります。続行しますか?</string>
+  <string name="style_accent_configuration_positive">続行</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">壁紙に合わせてスタイルを調整します</string>
+  <string name="style_automagic_dialog_content">スタイル <b>%1$s</b>とアクセント<b>%2$s</b>が提案されました。\n適用しますか?</string>
+  <string name="style_automagic_dialog_positive">適用</string>
+  <string name="style_accent_default_name">デフォルト</string>
+  <string name="style_dark_overlay_title">ダークモード</string>
+  <string name="style_dark_overlay_default">デフォルト</string>
+  <string name="style_dark_overlay_black">ブラック</string>
+  <string name="style_permission_error">壁紙を分析するにはストレージアクセスの権限を許可する必要があります。この機能を使用するには権限を許可してください。</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
+  <string name="trust_category_features">状態</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
+  <string name="trust_feature_selinux_value_disabled">無効</string>
+  <string name="trust_feature_selinux_explain">SELinux はどのプロセスがあなたのデバイス上のどのファイルにアクセスできるかを決定します。\nこれにより、ファイルを扱うことを想定されていないアプリとサービスがアクセスすることを防ぎます。このようにして悪意のあるプロセスはアクセスが制限され、セキュリティが保護されます。</string>
+  <string name="trust_feature_root">ルートアクセス</string>
+  <string name="trust_feature_root_value_disabled">無効</string>
+  <string name="trust_feature_root_value_adb">ADB のみ</string>
+  <string name="trust_feature_root_value_apps">アプリと ADB</string>
+  <string name="trust_feature_root_explain">ルートアクセスを使用すると、選択したアプリやサービスによるセキュリティ制限が回避され、システムやデバイスに損害を与える可能性のあるシステムの変更が可能になります。</string>
+  <string name="trust_feature_security_patches">Android セキュリティパッチ</string>
+  <string name="trust_feature_security_patches_value_base">プラットフォーム: %1$s\nベンダー: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">最新です</string>
+  <string name="trust_feature_security_patches_value_medium">いくつかの月例パッチが未適用</string>
+  <string name="trust_feature_security_patches_value_old">最新ではありません</string>
+  <string name="trust_feature_security_patches_explain">セキュリティパッチは Google や SoC ベンダーによって、悪意のあるアプリによるセキュリティ制限回避の可能性や、デバイスに一時的または永続的な損傷を与える可能性といったシステムの欠陥に対処するため毎月リリースされます。\nプラットフォームパッチは毎月世界中で更新されますが、ベンダーのパッチは OEM から時々更新されます。\n機器を安全に保つために LineageOS ビルドは常に最新のものにしてください。</string>
+  <string name="trust_feature_encryption">暗号化</string>
+  <string name="trust_feature_encryption_value_enabled">有効</string>
+  <string name="trust_feature_encryption_value_nolock">保護されたロック画面が必要です</string>
+  <string name="trust_feature_encryption_value_disabled">無効</string>
+  <string name="trust_feature_encryption_explain">デバイスを暗号化すると、電話がオフになっている時やリカバリーモードでのデータアクセスを防ぎます。これは電話が盗まれた特に重要で、パスワードなしでメッセージ、連絡先、その他の個人情報を人に読まれるのを防ぎます。\n暗号化をより効果的にするには、保護されたロック画面を設定する必要があります。</string>
+  <string name="trust_category_tools">プライバシー</string>
+  <string name="trust_notification_alerts_title">セキュリティ警告</string>
+  <string name="trust_warnings_alerts_intro">警告を表示させたいセキュリティ上の問題を選択できます。安全のため、すべての警告を有効にすることをおすすめします。</string>
+  <string name="trust_warnings_selinux">SELinux のステータス</string>
+  <string name="trust_warnings_keys">ビルド署名</string>
+  <string name="trust_onboarding_title">Trust にようこそ</string>
+  <string name="trust_onboarding_description">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
+  <string name="trust_onboarding_learn_more">詳細</string>
+  <string name="trust_onboarding_done">わかりました</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
+  <string name="sms_security_check_limit_summary">アプリは確認をする前に1分間に%s通のメッセージを送信できます</string>
+  <string name="sms_security_check_limit_summary_none">アプリは許可無くメッセージを送信することはできません</string>
+  <string name="sms_security_check_limit_always_confirm">常に確認する</string>
 </resources>

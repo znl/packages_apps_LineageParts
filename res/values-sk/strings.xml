@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Farby sú identické s farebným priestorom sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Farby sú identické s farebným priestorom DCI-P3</string>
+  <string name="live_display_reading_mode_title">Režim čítania</string>
+  <string name="live_display_reading_mode_summary">Režim odtieňov šedej pre dlhodobé čítanie</string>
   <string name="color_calibration_title">Kalibrácia farieb</string>
   <string name="color_calibration_summary">Kalibrovať farby na obrazovke</string>
   <string name="color_red_title">Červená</string>
@@ -204,6 +206,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Podsvietenie</string>
   <string name="button_backlight_enabled">Podsvietenie tlačidiel</string>
+  <string name="button_backlight_only_when_pressed_title">Podsvietenie tlačidiel iba po stlačení</string>
   <string name="keyboard_backlight_enabled">Podsvietenie klávesnice</string>
   <string name="button_backlight_seekbar_title">Itenzita podsvietenia tlačidiel</string>
   <string name="keyboard_backlight_seekbar_title">Intenzita podsvietenia klávesnice</string>
@@ -232,6 +235,7 @@
   <string name="power_menu_users_title">Prepínač používateľov</string>
   <string name="power_menu_bug_report_title">Nahlásiť chybu</string>
   <string name="power_menu_bug_report_disabled">Hlásenie chýb je zakázané v nastaveniach pre vývojárov</string>
+  <string name="power_menu_lockdown_title">Uzamknutie</string>
   <string name="volume_keys_control_ring_stream_title">Ovládanie hlasitosti zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tlačidlá hlasitosti ovládajú hlasitosť zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačidlá hlasitosti ovládajú hlasitosť médií</string>
@@ -401,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Hodiny</string>
+  <string name="status_bar_clock_show_seconds_title">Zobraziť sekundy</string>
+  <string name="status_bar_clock_show_seconds_summary">Zobraziť hodiny, minúty a sekundy</string>
   <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
   <string name="status_bar_clock_position_right">Vpravo</string>
   <string name="status_bar_clock_position_left">Vľavo</string>
@@ -431,9 +437,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Zobraziť prepínač automatického jasu v blízkosti posuvníka</string>
   <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
   <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikony stavového riadku</string>
-  <string name="status_bar_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor sieťovej prevádzky</string>
   <string name="network_traffic_settings_summary">Zobrazovať rýchlosť prenosu dát v stavovom riadku</string>
@@ -537,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Skryť navigačný panel</string>
   <string name="expanded_desktop_style_hide_both">Skryť oba</string>
   <string name="expanded_desktop_nothing_to_show_text">Vypnite prepínač upravenia rozšírenej plochy na základe aplikácií</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplikácie na celú obrazovku</string>
+  <string name="long_screen_settings_summary">Prinútiť staršie aplikácie na použitie pomerov na celú obrazovku</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Zvuky pri nabíjaní</string>
   <string name="charging_sounds_enabled_title">Povoliť</string>
@@ -594,6 +600,7 @@
   <string name="style_global_entry_light">Svetlá</string>
   <string name="style_global_entry_dark">Tmavá</string>
   <string name="style_global_entry_time">Automaticky (podľa času dňa)</string>
+  <string name="style_global_entry_app">Spravované %1$s</string>
   <string name="style_accent_title">Doplnková farba</string>
   <string name="style_accent_configuration_not_supported">Aktuálny odtieň nie je kompatibilný s vybratým štýlom. Ak chcete pokračovať, musíte vybrať iný odtieň, chcete pokračovať?</string>
   <string name="style_accent_configuration_positive">Pokračovať</string>
@@ -602,5 +609,46 @@
   <string name="style_automagic_dialog_content">Navrhovaný štýl: <b>%1$s</b> с <b>%2$s</b> odtieň.\nChcete ho použiť?</string>
   <string name="style_automagic_dialog_positive">Použiť</string>
   <string name="style_accent_default_name">Predvolený</string>
+  <string name="style_dark_overlay_title">Tmavý režim</string>
+  <string name="style_dark_overlay_default">Predvolený</string>
+  <string name="style_dark_overlay_black">Čierny</string>
   <string name="style_permission_error">Na analýzu vašej tapety je potrebné povolenie na prístup k úložisku. Udeľte prosím povolenie na používanie tejto funkcie</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust pomáha udržiavať vaše zariadenie v bezpečí a chráni vaše súkromie.\nZobrazí sa ikona Trust, ktorá vám pomôže kontrolovať bezpečnosť obsahu.</string>
+  <string name="trust_category_features">Stav</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Vynútený</string>
+  <string name="trust_feature_selinux_value_disabled">Vypnutý</string>
+  <string name="trust_feature_selinux_explain">Služba SELinux určuje, ktoré procesy majú prístup k súborom vo vašom zariadení.\nZabraňuje tomu, aby aplikácie a služby mali prístup k súborom, s ktorými sa nemusia zaoberať. Týmto spôsobom má nebezpečný proces obmedzený prístup, takže vaša bezpečnosť je zachovaná.</string>
+  <string name="trust_feature_root">Root prístup</string>
+  <string name="trust_feature_root_value_disabled">Vypnutý</string>
+  <string name="trust_feature_root_value_adb">Len ADB</string>
+  <string name="trust_feature_root_value_apps">Aplikácie a ADB</string>
+  <string name="trust_feature_root_explain">Root prístup umožňuje vynechať bezpečnostné obmedzenia pomocou aplikácií a služieb, ktoré si vyberiete, čo im umožní vykonať zmeny v systéme, ktoré potencionálne môžu spôsobiť poškodenie vášho zariadenia alebo operačného systému.</string>
+  <string name="trust_feature_security_patches">Bezpečnostné záplaty Android</string>
+  <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDodávateľ: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">aktuálne</string>
+  <string name="trust_feature_security_patches_value_medium">staré niekoľkých mesiacov</string>
+  <string name="trust_feature_security_patches_value_old">zastaralé</string>
+  <string name="trust_feature_security_patches_explain">Bezpečnostné záplaty sú vydávané mesačne spoločnosťou Google a dodávateľmi SoC na riešenie nedostatkov v systéme, ktoré by mohli byť zneužiť škodlivými aplikáciami na obídenie bezpečnostných obmedzení a mohli by spôsobiť dočasné alebo trvalé poškodenie vášho zariadenia.\nZatiaľ čo záplaty platformy sú aktualizované globálne každý mesiac, záplaty 
+ OEM dodávateľov sú aktualizované z času na čas.\nAk chcete, aby vaše zariadenie bolo v bezpečí, uistite sa, že vaša zostava LineageOS je vždy aktuálna.</string>
+  <string name="trust_feature_encryption">Šifrovanie</string>
+  <string name="trust_feature_encryption_value_enabled">Zapnuté</string>
+  <string name="trust_feature_encryption_value_nolock">Je potrebná zabezpečená obrazovka uzamknutia</string>
+  <string name="trust_feature_encryption_value_disabled">Vypnuté</string>
+  <string name="trust_feature_encryption_explain">Šifrovanie zariadenia zabraňuje prístupu k vašim údajom, keď je telefón vypnutý alebo v Recovery režime. Toto je obzvlášť dôležité v prípade odcudzenia vášho telefónu a zabraňuje ľuďom v čítaní vašich správ, kontaktov a iných súkromných informácií bez znalosti hesla.\nAby bolo šifrovanie efektívnejšie, musíte nastaviť zabezpečenú obrazovku uzamknutia.</string>
+  <string name="trust_category_tools">Súkromie</string>
+  <string name="trust_notification_alerts_title">Bezpečnostné upozornenia</string>
+  <string name="trust_warnings_alerts_intro">Môžete si vybrať problémy s bezpečnosťou, na ktoré chcete byť upozornený. Pre vašu bezpečnosť sa odporúča zapnúť všetky upozornenia</string>
+  <string name="trust_warnings_selinux">Stav SELinux</string>
+  <string name="trust_warnings_keys">Podpis zostavenia</string>
+  <string name="trust_onboarding_title">Zoznámte sa s Trust</string>
+  <string name="trust_onboarding_description">Trust pomáha udržiavať vaše zariadenie v bezpečí a chráni vaše súkromie.\nZobrazí sa ikona Trust, ktorá vám pomôže kontrolovať bezpečnosť obsahu</string>
+  <string name="trust_onboarding_learn_more">Zistiť viac</string>
+  <string name="trust_onboarding_done">Chápem</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Obmedzenie správ SMS</string>
+  <string name="sms_security_check_limit_summary">Aplikácie môžu odoslať len %s správ za minút, pred vyžiadaním potvrdenia</string>
+  <string name="sms_security_check_limit_summary_none">Aplikácie nemajú povolené odosielanie žiadnych správ bez potvrdenia</string>
+  <string name="sms_security_check_limit_always_confirm">Vždy potvrdiť</string>
 </resources>

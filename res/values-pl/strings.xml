@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Kolory zgodne z paletą kolorów sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Kolory zgodne z paletą kolorów DCI-P3</string>
+  <string name="live_display_reading_mode_title">Tryb czytania</string>
+  <string name="live_display_reading_mode_summary">Tryb skali szarości dla długotrwałego czytania</string>
   <string name="color_calibration_title">Kalibracja kolorów</string>
   <string name="color_calibration_summary">Kalibruj kolory wyświetlacza</string>
   <string name="color_red_title">Czerwony</string>
@@ -204,6 +206,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Podświetlenie</string>
   <string name="button_backlight_enabled">Podświetlenie przycisków</string>
+  <string name="button_backlight_only_when_pressed_title">Podświetlenie przycisków tylko po naciśnięciu</string>
   <string name="keyboard_backlight_enabled">Podświetlenie klawiatury</string>
   <string name="button_backlight_seekbar_title">Jasność przycisków</string>
   <string name="keyboard_backlight_seekbar_title">Jasność klawiatury</string>
@@ -232,6 +235,7 @@
   <string name="power_menu_users_title">Przełącznik użytkowników</string>
   <string name="power_menu_bug_report_title">Zgłoszenie błędu</string>
   <string name="power_menu_bug_report_disabled">Raportowanie błędów jest wyłączone w opcjach programistycznych</string>
+  <string name="power_menu_lockdown_title">Blokada</string>
   <string name="volume_keys_control_ring_stream_title">Regulacja głośności dzwonka</string>
   <string name="volume_keys_control_ring_stream_summary_on">Przyciski głośności regulują głośność dzwonka</string>
   <string name="volume_keys_control_ring_stream_summary_off">Przyciski głośności regulują głośność multimediów</string>
@@ -431,9 +435,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Pokaż przełącznik dla automatycznej jasności blisko suwaka</string>
   <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
   <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikony paska stanu</string>
-  <string name="status_bar_icons_summary">Wybierz, które ikony będą wyświetlane na pasku stanu</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
   <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>
@@ -539,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Ukryj pasek nawigacyjny</string>
   <string name="expanded_desktop_style_hide_both">Ukryj oba</string>
   <string name="expanded_desktop_nothing_to_show_text">Wyłącz przełącznik, aby dostosować rozszerzony pulpit indywidualnie dla każdej aplikacji</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplikacje pełnoekranowe</string>
+  <string name="long_screen_settings_summary">Wymuś na starszych aplikacjach korzystanie z pełnych proporcji ekranu</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Dźwięki ładowania</string>
   <string name="charging_sounds_enabled_title">Włącz</string>
@@ -596,11 +600,54 @@
   <string name="style_global_entry_light">Jasny</string>
   <string name="style_global_entry_dark">Ciemny</string>
   <string name="style_global_entry_time">Automatyczny (pora dnia)</string>
+  <string name="style_global_entry_app">Zarządzane przez %1$s</string>
+  <string name="style_accent_title">Kolor akcentu</string>
   <string name="style_accent_configuration_not_supported">Obecny akcent kolorystyczny jest niekompatybilny z wybranym stylem. Aby kontynuować, musisz wybrać inny akcent, czy chcesz kontynuować?</string>
   <string name="style_accent_configuration_positive">Kontynuuj</string>
+  <string name="style_automagic_title">Automagicznie</string>
   <string name="style_automagic_description">Dostosuj styl do swojej tapety</string>
   <string name="style_automagic_dialog_content">Sugerowany styl: <b>%1$s</b> z <b>%2$s</b> akcentem.\nChcesz go zastosować?</string>
   <string name="style_automagic_dialog_positive">Zastosuj</string>
   <string name="style_accent_default_name">Domyślny</string>
+  <string name="style_dark_overlay_title">Tryb ciemny</string>
+  <string name="style_dark_overlay_default">Domyślny</string>
+  <string name="style_dark_overlay_black">Czarny</string>
   <string name="style_permission_error">Wymagany jest dostęp do pamięci, aby dokonać analizy tapety, proszę przyznać uprawnienia, aby korzystać z tej funkcji</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust pomaga utrzymać twoje urządzenie bezpiecznym oraz chronić twoją prywatność.\nIkona Trust wyświetla się by pomóc ci przez sprawdzanie bezpieczeństwa zawartości.</string>
+  <string name="trust_category_features">Status</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>
+  <string name="trust_feature_selinux_value_disabled">Wyłączone</string>
+  <string name="trust_feature_selinux_explain">SELinux narzuca, które procesy mają dostęp do poszczególnych plików na Twoim urządzeniu.\nZapobiega to dostępowi aplikacji i usług do plików, które nie powinny być obsługiwane. Dzięki temu złośliwy proces ma ograniczony dostęp, zapewniając zachowanie bezpieczeństwa.</string>
+  <string name="trust_feature_root">Dostęp do root</string>
+  <string name="trust_feature_root_value_disabled">Wyłączone</string>
+  <string name="trust_feature_root_value_adb">Tylko ADB</string>
+  <string name="trust_feature_root_value_apps">Aplikacje i ADB</string>
+  <string name="trust_feature_root_explain">Dostęp do root pozwala na omijanie ograniczeń bezpieczeństwa przez aplikacje i usługi które wybierzesz, zezwalając im na wykonywanie modyfikacji w systemie, co może wyrządzić szkody twojemu urządzeniu lub systemowi.</string>
+  <string name="trust_feature_security_patches">Aktualizacje zabezpieczeń Androida</string>
+  <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">aktualne</string>
+  <string name="trust_feature_security_patches_value_medium">kilkumiesięczne</string>
+  <string name="trust_feature_security_patches_value_old">nieaktualne</string>
+  <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google oraz dostawców SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzić czasowe lub trwałe szkody twojemu urządzeniu.\n Gdy łatki platformy wydawane są globalnie co miesiąc, łatki dostawców są aktualizowane od OEM, co jakiś czas.\nAby utrzymać twoje urządzenie bezpiecznym, upewnij się że twoja wersja LineageOS jest zawsze aktualna.</string>
+  <string name="trust_feature_encryption">Szyfrowanie</string>
+  <string name="trust_feature_encryption_value_enabled">Włączone</string>
+  <string name="trust_feature_encryption_value_nolock">Wymaga zabezpieczenego ekranu blokady</string>
+  <string name="trust_feature_encryption_value_disabled">Wyłączone</string>
+  <string name="trust_feature_encryption_explain">Szyfrowanie twojego urządzenia zabezpiecza znajdujące się na nim dane gdy twój telefon jest wyłączony, lub znajduje się w trybie recovery. Jest to szczególnie ważne kiedy twoje urządzenie zostanie skradzione, uniemożliwia to dostęp do wiadomości, kontaktów i innych prywatnych danych bez podania hasła.\nAby szyfrowanie było bardziej efektywne potrzebne jest ustawienie zabezpieczenia ekranu blokady.</string>
+  <string name="trust_category_tools">Prywatność</string>
+  <string name="trust_notification_alerts_title">Alerty zabezpieczeń</string>
+  <string name="trust_warnings_alerts_intro">Możesz wybrać o których problemach z bezpieczeństwem będziesz powiadamiany. Dla twojego bezpieczeństwa, zalecane jest włączenie wszystkich powiadomień</string>
+  <string name="trust_warnings_selinux">Stan SELinux</string>
+  <string name="trust_warnings_keys">Sygnatura kompilacji</string>
+  <string name="trust_onboarding_title">Przywitaj się z Trust</string>
+  <string name="trust_onboarding_description">Trust pomaga utrzymać twoje urządzenie bezpiecznym oraz chronić twoją prywatność.\nIkona Trust wyświetli się by pomóc ci przez sprawdzanie bezpieczeństwa zawartości</string>
+  <string name="trust_onboarding_learn_more">Dowiedz się więcej</string>
+  <string name="trust_onboarding_done">Rozumiem</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limit wiadomości SMS</string>
+  <string name="sms_security_check_limit_summary">Aplikacje mogą wysłać %s wiadomości przez 1 minutę, nim konieczne będzie potwierdzenie</string>
+  <string name="sms_security_check_limit_summary_none">Aplikacje nie mogą wysyłać żadnych wiadomości bez potwierdzenia</string>
+  <string name="sms_security_check_limit_always_confirm">Zawsze potwierdzaj</string>
 </resources>

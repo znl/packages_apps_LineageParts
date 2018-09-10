@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Adaptív fényerő váltása a fényerő csúszka közelében</string>
   <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
   <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Állapotsor ikonok</string>
-  <string name="status_bar_icons_summary">Állapotsor ikonok megjelenítésének vezérlése</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Védett alkalmazások</string>
@@ -513,6 +510,7 @@
   <string name="expanded_desktop_style_hide_navigation">Navigációs sáv elrejtése</string>
   <string name="expanded_desktop_style_hide_both">Mindkettő elrejtése</string>
   <string name="expanded_desktop_nothing_to_show_text">Kapcsolja ki a kapcsolót a kiterjesztett képernyő alkalmazásonkénti testreszabásához</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Töltés jelzése</string>
   <string name="charging_sounds_enabled_title">Engedélyezés</string>
@@ -556,4 +554,6 @@
   <string name="touchscreen_gesture_action_next_track">Következő zeneszámra ugrás</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>
